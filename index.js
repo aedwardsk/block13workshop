@@ -23,10 +23,8 @@ function convertToCelsius(f) {
  * @returns {string} the description from the table above corresponding to
  * the given Fahrenheit temperature `f`
  */
-function describeTemperature(f) {}
-
-function createMessage(f, c) {
-  let description;
+function describeTemperature(f, c) {
+  let description = "";
   if (f < 32) {
     description = "very cold";
   } else if (f < 64) {
@@ -38,15 +36,31 @@ function createMessage(f, c) {
   } else if (f >= 100) {
     description = "very hot";
   }
-  return `${f}°F is ${c}°C. That is ${description}.`;
+  return description;
 }
+
+// function createMessage(f, c) {
+//   let description = "";
+//   if (f < 32) {
+//     description = "very cold";
+//   } else if (f < 64) {
+//     description = "cold";
+//   } else if (f < 86) {
+//     description = "warm";
+//   } else if (f < 100) {
+//     description = "hot";
+//   } else if (f >= 100) {
+//     description = "very hot";
+//   }
+//   return description;
+// }
 
 /**
  * @param {number} limit
  * @returns {number} a random integer in the range [0, `limit`)
  */
 function getRandomInt(limit) {
-  // TODO
+  return Math.floor(Math.random() * limit);
 }
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
