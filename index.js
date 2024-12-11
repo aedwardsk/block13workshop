@@ -23,7 +23,7 @@ function convertToCelsius(f) {
  * @returns {string} the description from the table above corresponding to
  * the given Fahrenheit temperature `f`
  */
-function describeTemperature(f) {};
+function describeTemperature(f) {}
 
 function createMessage(f, c) {
   let description;
@@ -35,7 +35,7 @@ function createMessage(f, c) {
     description = "warm";
   } else if (f < 100) {
     description = "hot";
-  } else if { (f >= 100 )
+  } else if (f >= 100) {
     description = "very hot";
   }
   return `${f}°F is ${c}°C. That is ${description}.`;
