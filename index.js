@@ -36,7 +36,7 @@ function createMessage(f, c) {
   } else if (f < 100) {
     description = "hot";
   } else if { (f >= 100 )
-  description = "very hot";
+    description = "very hot";
   }
   return `${f}°F is ${c}°C. That is ${description}.`;
 }
