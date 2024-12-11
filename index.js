@@ -6,7 +6,8 @@
  * @returns {number} temperature in °C
  */
 function convertToCelsius(f) {
-  // TODO
+  let c = ((f - 32) * 5) / 9;
+  return Math.round(c);
 }
 
 /**
