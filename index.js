@@ -38,7 +38,6 @@ function describeTemperature(f, c) {
   }
   return description;
 }
-console.log(parseFahrenheit(f));
 // function createMessage(f, c) {
 //   let description = "";
 //   if (f < 32) {
